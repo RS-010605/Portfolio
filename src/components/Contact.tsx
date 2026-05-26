@@ -37,7 +37,7 @@ export default function Contact() {
     try {
       setLoading(true);
 
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://portfolio-backend-one-cyan.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

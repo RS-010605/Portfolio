@@ -8,7 +8,7 @@ export default function Footer() {
           
           <div className="text-center md:text-left">
             <a href="#" className="text-2xl font-bold tracking-tighter text-white mb-2 block">
-              Dev<span className="text-gradient">.STUDIO</span>
+              DEV<span className="text-gradient">.STUDIO</span>
             </a>
             <p className="text-zinc-500 text-sm">© {new Date().getFullYear()} All rights reserved.</p>
           </div>
