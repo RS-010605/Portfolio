@@ -32,22 +32,30 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+
     e.preventDefault();
 
     try {
+
       setLoading(true);
 
-      const response = await fetch('https://portfolio-backend-one-cyan.vercel.app/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://portfolio-backend-one-cyan.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
       if (data.success) {
+
+        alert("Message Sent Successfully");
+
         setSuccess(true);
 
         setFormData({
@@ -57,14 +65,25 @@ export default function Contact() {
           budget: '$1k - $3k',
           message: '',
         });
+
+      } else {
+
+        alert(data.error || "Something went wrong");
+
       }
 
     } catch (error) {
+
       console.log(error);
-      alert('Something went wrong');
+
+      alert("Network Error");
+
     } finally {
+
       setLoading(false);
+
     }
+
   };
 
   return (
