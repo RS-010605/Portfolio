@@ -40,7 +40,7 @@ export default function Contact() {
       setLoading(true);
 // https://portfolio-backend-one-cyan.vercel.app/ 
       const response = await fetch(
-        "http://localhost:5000/api/contact",
+        "https://portfolio-backend-one-cyan.vercel.app/api/contact",
         {
           method: "POST",
           headers: {
