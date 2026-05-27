@@ -223,6 +223,8 @@ export default function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <input
+                    id='a'
+                    autoComplete='none'
                       type="text"
                       name="name"
                       placeholder="Your Name"
@@ -233,6 +235,8 @@ export default function Contact() {
                     />
 
                     <input
+                    id='b'
+                    autoComplete='none'
                       type="email"
                       name="email"
                       placeholder="Your Email"
