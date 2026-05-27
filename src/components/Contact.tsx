@@ -126,7 +126,7 @@ export default function Contact() {
                   </p>
 
                   <p className="text-white font-medium">
-                    hello@devstudio.com
+                    ram.creative.dev@gmail.com
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Contact() {
                   </p>
 
                   <p className="text-white font-medium">
-                    +91 9876543210
+                    +91 9574050649
                   </p>
                 </div>
               </div>
