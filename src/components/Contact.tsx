@@ -38,9 +38,9 @@ export default function Contact() {
     try {
 
       setLoading(true);
-
+// https://portfolio-backend-one-cyan.vercel.app/ 
       const response = await fetch(
-        "https://portfolio-backend-one-cyan.vercel.app/",
+        "http://localhost:5000/api/contact",
         {
           method: "POST",
           headers: {
@@ -54,7 +54,7 @@ export default function Contact() {
 
       if (data.success) {
 
-        alert("Message Sent Successfully");
+        // alert("Message Sent Successfully");
 
         setSuccess(true);
 
